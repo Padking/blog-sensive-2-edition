@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Environments
+.editorconfig
+.env
+.replit
+env/
+
+# IDE
+.vscode/
+
+# Example files
+bar.py
+baz.py
+foo.py
+proba*
+#index.html
+
+# Example dirs
+for_project/
