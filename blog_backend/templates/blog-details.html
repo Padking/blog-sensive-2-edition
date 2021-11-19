@@ -1,16 +1,7 @@
+{% extends "base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Remake Barber - Blog Details</title>
-	<link rel="icon" href="{% static 'blog/img/favicon.png' %}" type="image/png">
 
-  <link rel="stylesheet" href="{% static 'blog/styles.min.css' %}">
-</head>
-<body>
+{% block content %}
   <!--================Header Menu Area =================-->
   <header class="header_area">
     <div class="main_menu">
@@ -219,5 +210,5 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
   <!--================ End Footer Area =================-->
 
   <script src="{% static 'blog/scripts.js' %}"></script>
-</body>
-</html>
+
+{% endblock %}
