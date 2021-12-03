@@ -59,11 +59,11 @@ cover/
 *.log
 local_settings.py
 media/
+static/
 db.sqlite3
 db.sqlite3-journal
 
 # Environments
-.editorconfig
 .env
 .venv
 env/
@@ -74,16 +74,6 @@ venv.bak/
 
 # IDE
 .vscode/
-
-# Example files
-bar.py
-baz.py
-foo.py
-proba*
-#index.html
-
-# Example dirs
-for_project/
 
 # Linter
 .flake8
@@ -121,3 +111,6 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# Personal
+for_project/
