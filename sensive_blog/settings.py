@@ -98,12 +98,8 @@ USE_TZ = True
 
 STATIC_URL = os.getenv('STATIC_URL', '/static/')
 
-STATICFILES_DIRS = [
-    ('blog', env.str('STATICFILES_DIR_FOR_BLOG_APP')),
-]
+MEDIA_ROOT = 'media'
 
-MEDIA_ROOT = os.getenv("MEDIA_ROOT", os.path.join(BASE_DIR, 'media'))
-
-STATIC_ROOT = os.getenv("STATIC_ROOT", os.path.join(BASE_DIR, 'static'))
+STATIC_ROOT = 'static'
 
 MEDIA_URL = os.getenv('MEDIA_URL', '/media/')

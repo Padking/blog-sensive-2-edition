@@ -25,14 +25,13 @@
 |`SECRET_KEY`| Уникальное непредсказуемое значение | — |
 |`MEDIA_URL`| Имя path-части URL для отдачи медиа-файлов | `/media/` |
 |`STATIC_URL`| Имя path-части URL для отдачи статики | `/static/` |
-|`STATICFILES_DIR_FOR_BLOG_APP`| Абсолютный путь к каталогу с frontend-частью проекта | — |
 
 ## Установка
 
 - клонировать проект:
 ```sh
 git clone https://github.com/Padking/blog-sensive-2-edition.git
-cd blog_backend
+cd blog-sensive-2-edition
 ```
 - создать каталог виртуального окружения (ВО)*,
    связать каталоги ВО и проекта,
@@ -41,10 +40,6 @@ cd blog_backend
 mkvirtualenv -p <path to python> <name of virtualenv>
 setvirtualenvproject <path to virtualenv> <path to project>
 pip install -r requirements.txt
-```
-- собрать статику для проекта:
-```sh
-python manage.py collectstatic --clear
 ```
 - запустить сайт:
 ```sh
